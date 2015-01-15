@@ -4,9 +4,9 @@ import com.mymatrixx.servicesApi.redbook
 
 class redbookTest extends GroovyTestCase {
 
-    def fooTest() {
-        def output = redbook.foo("oh yeah");
+    void testGetAwp() {
+        def output = redbook.getAwp("12345", "1/1/2001")
 
-        assert output == "passed in: oh yeah";
+        assert output != null;
     }
 }
